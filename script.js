@@ -28,6 +28,7 @@ const modules = [
         title: "Web Under the Hood (Networking & HTML Basics)",
         description:
           "Learn how the internet works and how HTML structures web pages.",
+          
         shortNote:
           "When you open a website, your browser sends a request, DNS finds the server, and the server returns HTML, CSS, and JavaScript files.",
         points: [
@@ -740,17 +741,15 @@ function renderContent() {
         <p>${topic.description}</p>
 
         <ul class="topic-points">${pointsHtml}</ul>
-
-        <div class="topic-note">
-          <h4>Short Note</h4>
-          <p>${topic.shortNote || ""}</p>
-        </div>
-
+        
         <div class="topic-details">
           <h4>Detailed Explanation</h4>
           ${detailsHtml}
         </div>
-
+<div class="topic-note">
+          <h4>Short Note</h4>
+          <p>${topic.shortNote || ""}</p>
+        </div>
         <div class="mini-editor">
           <div class="mini-editor-header">
             <div>

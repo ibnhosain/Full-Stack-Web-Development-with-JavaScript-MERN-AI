@@ -1,0 +1,396 @@
+/* =========================================
+   GLOBAL STYLE
+   =========================================
+   EDIT HERE:
+   - font
+   - background color
+   - text color
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #1f2937;
+  display: flex;
+}
+
+/* =========================================
+   SIDEBAR STYLE
+   =========================================
+   EDIT HERE:
+   - sidebar width
+   - sidebar background
+   - sidebar brand color
+*/
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  padding: 20px 16px;
+  background: #04aa6d;
+  color: #ffffff;
+}
+
+.sidebar-brand h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.sidebar-brand p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   MODULE MENU STYLE
+   =========================================
+   EDIT HERE:
+   - module title button style
+   - topic link hover
+   - active link color
+*/
+.module-menu {
+  padding: 10px 0 20px;
+}
+
+.module-block {
+  border-top: 1px solid #f0f0f0;
+}
+
+.module-title {
+  width: 100%;
+  border: none;
+  background: #d9eee1;
+  color: #111827;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.module-title:hover {
+  background: #cfe8d7;
+}
+
+.topic-links {
+  background: #f8fafc;
+}
+
+.topic-links a {
+  display: block;
+  text-decoration: none;
+  color: #374151;
+  padding: 9px 16px 9px 28px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-left: 4px solid transparent;
+  transition: 0.2s ease;
+}
+
+.topic-links a:hover {
+  background: #ededed;
+}
+
+.topic-links a.active {
+  background: #04aa6d;
+  color: #ffffff;
+  border-left-color: #03784c;
+  font-weight: 700;
+}
+
+/* =========================================
+   MAIN CONTENT STYLE
+   =========================================
+   EDIT HERE:
+   - main content spacing
+   - header spacing
+   - title size
+*/
+.main-content {
+  flex: 1;
+  padding: 28px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #d9eee1;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.page-header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.page-header p {
+  margin: 0;
+  max-width: 820px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* =========================================
+   MODULE SECTION STYLE
+   ========================================= */
+.module-section {
+  margin-bottom: 42px;
+}
+
+.module-heading {
+  margin-bottom: 18px;
+}
+
+.module-heading h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.module-heading p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* =========================================
+   TOPIC CARD STYLE
+   =========================================
+   EDIT HERE:
+   - card bg
+   - shadow
+   - border radius
+   - spacing
+*/
+.class-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+  scroll-margin-top: 20px;
+}
+
+.card-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.class-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.class-card p {
+  margin: 0 0 14px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.topic-points {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.topic-points li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* =========================================
+   BUTTON STYLE
+   =========================================
+   EDIT HERE:
+   - run button color
+   - dark button color
+*/
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #04aa6d;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #03935e;
+}
+
+.btn-dark {
+  background: #282a35;
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background: #1f2028;
+}
+
+/* =========================================
+   EDITOR STYLE
+   =========================================
+   EDIT HERE:
+   - editor height
+   - preview height
+*/
+.editor-section {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.editor-header h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.editor-header p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.editor-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.editor-panel,
+.preview-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-panel label,
+.preview-panel label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#editor {
+  width: 100%;
+  min-height: 340px;
+  resize: vertical;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 14px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+#preview {
+  width: 100%;
+  min-height: 340px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .editor-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .main-content {
+    padding: 12px;
+  }
+
+  .class-card {
+    padding: 12px;
+  }
+
+  #editor,
+  #preview {
+    min-height: 200px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+}
